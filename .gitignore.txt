@@ -1,0 +1,13 @@
+# 忽略所有可执行文件
+*.exe
+*.out
+*.o
+*.a
+*.so
+*.dll
+
+# 忽略编译生成的目录
+build/
+bin/
+Debug/
+Release/
