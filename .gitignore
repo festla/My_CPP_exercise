@@ -1,0 +1,15 @@
+# 编译产物
+*.exe
+*.out
+*.o
+*.a
+*.so
+
+# 构建目录
+build/
+Debug/
+Release/
+
+# IDE 配置
+.vscode/
+.idea/
