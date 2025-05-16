@@ -7,6 +7,7 @@ int main()
     cout<<"*ptr = "<<*ptr<<endl;//*ptr解引用=num
     cout<<" ptr = "<< ptr<<endl;//ptr是num的地址
     int &ref = num;             //函数的&参数引用就是别名，通过对别名的修改改变传过来的参数
+    
     cout<<" ref = "<< ref<<endl;//ref是别名
     ref = 1002;
     cout<<" ref = "<< ref<<endl;
