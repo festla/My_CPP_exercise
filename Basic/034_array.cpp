@@ -4,7 +4,7 @@ using namespace std;
 int main()
 {
     int len=1;
-    while(len<10){
+    while(len<11){
         int num_array2[len];
         cout<<"len: "<<len;
         cout<<", sizeof(num_array2) = "
@@ -34,4 +34,5 @@ int main()
 			"resource": "/e:/Code/My_CPP_exercise/Basic/034_array.cpp"
 		}
 	]
+    g++ -std=c++17 034_array.cpp 编译时指定c++标准即可通过；
 }] */
