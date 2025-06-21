@@ -23,5 +23,12 @@ int main()
     cout << stu.name << " was born in " << stu.born
          << ". Gender: " << (stu.male ? "male" : "female") << endl;
 
+    cout << "Address of stu: " << pstu <<endl;
+    cout << "Address of stu: " << &stu <<endl;
+    cout << "Address of member name: " << &(pstu->name) <<endl;
+    cout << "Address of member born: " << &(pstu->born) <<endl;
+    cout << "Address of member male: " << &(pstu->male) <<endl;
+
+    cout << "sizeof(pstu) = " << sizeof(pstu) << endl;
     return 0;
 }
