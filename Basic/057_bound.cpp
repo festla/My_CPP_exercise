@@ -15,3 +15,6 @@ int main()
 
     return 0;
 }
+//数组是一个常量指针
+//sizeof(numbers)返回的是数组的大小
+//sizeof(p) 只能返回4或8 无论是什么指针
