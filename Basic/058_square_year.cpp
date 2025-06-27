@@ -2,28 +2,28 @@
 #include<cstring>
 #include<cmath>
 using namespace std;
-
+void solve(){
+    char s[4];
+    cin>>s;
+    int num = stoi(s);
+    bool found = false;
+    for(int i=0;i*i<=num;i++){
+        int j = sqrt(num)-i;
+        if(pow(j+i,2) == num){
+            cout << i << " " << j << endl;
+            found = true;
+            break;
+        }
+    }
+    if(!found){
+        cout << -1 <<endl;
+    }
+}
 int main()
 {
     int t;
     cin>>t;
 
-    while(t--){
-        string s;
-        cin>>s;
-        int num = stoi(s);
-        
-        for(int i=0;i*i<=num;i++){
-            int j_square = num-i*i;
-            int j = sqrt(j_square);
-            if(j*j == j_square){
-                cout << i << " " << j << endl;
-                
-                return 0;
-            }
-        }
-        cout << -1 <<endl;
-
-        return 0;
-    }
+    while(t--) solve();
+    return 0;
 }
